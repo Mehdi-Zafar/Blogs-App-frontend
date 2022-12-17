@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+* {
+  font-family: "Edu SA Beginner", cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../public/assets/img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  margin: 0;
+  box-shadow: 2px 0 3px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-inline: 10px;
+  list-style-type: none;
+  padding: 5px;
+  border-radius: 20px;
+  transition: all 1s;
+}
+
+nav ul li a {
+  font-size: x-large;
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  transform: translateY(10%);
+  transition: all 1s;
+}
+
+nav ul.leftul li:first-child {
+  font-weight: bolder;
+  transform: none;
+}
+
+nav ul.rightul li a:hover {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.small-nav {
+  display: none;
+}
+
+.large-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ham-btn {
+  display: none;
+}
+
+div.homeContent {
+  margin: 10px auto;
+  width: fit-content;
+}
+
+div.homeContent h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+div.blog-template {
+  padding: 0 10px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: 1px solid crimson;
+  margin: 10px auto;
+  transition: all 1s;
+  background-color: aliceblue;
+  text-align: center;
+  position: relative;
+  width: 60vw;
+}
+
+div.blog-template:hover {
+  box-shadow: 1px 1px 5px 1px crimson;
+  transition: all 1s;
+}
+
+div.blog-template button,
+div.single-blog button {
+  color: black;
+  font-size: 1.1rem;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid crimson;
+}
+
+button.deletebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+button.editbtn {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+
+/* div.blog-template button.readmorebtn {
+  opacity: 1.3;
+} */
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+div.single-blog {
+  padding: 0 15px;
+  border-radius: 20px;
+  font-size: 1.35rem;
+  border: 1px solid crimson;
+  margin: 20px auto;
+  background-color: aliceblue;
+  text-align: center;
+  position: relative;
+  width: 80vw;
+  line-height: 30px;
+}
+div.Abouttext {
+  text-align: center;
+  font-size: 1.3rem;
+  width: fit-content;
+}
+
+div.Abouttext p.Abouttextp {
+  margin: 0 20px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid crimson;
+  background-color: aliceblue;
+}
+
+div.Contactdiv {
+  text-align: center;
+  width: 500px;
+  margin: 20px auto;
+  border: 2px solid crimson;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+
+div.Newblog {
+  margin: 20px auto;
+  padding: 0 20px 10px 20px;
+  width: 500px;
+  text-align: center;
+  font-size: 2rem;
+  border: 1px solid crimson;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+
+div.Newblog input {
+  height: 40px;
+  width: 60%;
+  font-size: large;
+  text-align: center;
+  border-radius: 15px;
+  background-color: aliceblue;
+  border-color: crimson;
+  letter-spacing: 1.5px;
+  font-family: cursive;
+}
+
+div.Newblog textarea {
+  font-size: 1.3rem;
+  border-radius: 10px;
+  background-color: aliceblue;
+  border-color: crimson;
+  padding: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 90%;
+}
+
+div.Newblog input:focus,
+div.Newblog textarea:focus {
+  background-color: ivory;
+}
+
+footer {
+  box-shadow: 2px 0 3px;
+  background-color: aliceblue;
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer div {
+  color: black;
+  padding: 2px 0;
+  text-align: center;
+  display: block;
+}
+
+div.Newblog button {
+  background-color: aliceblue;
+  color: black;
+  font-size: 1.3rem;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+div.Newblog button:hover {
+  background-color: black;
+  color: aliceblue;
+  border: 2px solid crimson;
+}
+
+.blog-content {
+  text-align: justify;
+  margin: auto 10px;
+}
+
+div.blog-template button.read-blog {
+  padding: 8px 20px;
+  background-color: aliceblue;
+  color: rgba(0, 0, 0, 0.801);
+  font-size: 1.3rem;
+  border: 1px solid crimson;
+  font-weight: bolder;
+}
+
+div.blog-template button.read-blog:hover {
+  box-shadow: 1px 1px 2px 1px crimson;
+  opacity: 1;
+}
+
+div.blog-dates {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.loader {
+  margin: 250px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .hide {
+    display: none !important;
+  }
+  .small-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-block: 5px;
+  }
+  .large-nav {
+    display: none;
+  }
+  .small-nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .small-nav li {
+    margin: auto;
+    list-style-type: none;
+    padding: 5px;
+    transition: all 1s;
+  }
+
+  .small-nav li a {
+    font-size: x-large;
+    color: black;
+    text-decoration: none;
+  }
+  .navbar-brand {
+    margin: auto;
+  }
+  div.blog-template {
+    width: 90vw;
+  }
+  .ham-btn {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: block;
+    font-size: x-large;
+  }
+  div.Contactdiv {
+    width: 90%;
+  }
+  div.Newblog {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  div.blog-dates {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
